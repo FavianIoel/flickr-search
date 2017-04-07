@@ -1,7 +1,21 @@
 jQuery(document).ready(function($) {
 
  var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
-
+	
+//get random words
+var w1 ,w2 ,w3 = '';
+$.get('https://raw.githubusercontent.com/FavianIoel/flickr-search/master/data/words.txt', function(txt) {
+    var lines = txt.responseText.split("\n");
+    var randLineNum = Math.floor(Math.random() * lines.length);
+    var randLineNum1 = Math.floor(Math.random() * lines.length);
+    var randLineNum2 = Math.floor(Math.random() * lines.length);
+    w1 = lines[randLineNum];
+    w2 = lines[randLineNum1];
+    w3 = lines[randLineNum2];
+});
+	$('#w1').html(w1);
+	$('#w2').html(w2);
+	$('#w3').html(w3);
 	$('button').click(function(event) {
 		$('button').removeClass('selected');
 		$(this).addClass('selected');
