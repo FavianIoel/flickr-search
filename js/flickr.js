@@ -13,7 +13,9 @@ $.get('https://raw.githubusercontent.com/FavianIoel/flickr-search/master/data/wo
     w1 = lines[randLineNum];
     w2 = lines[randLineNum1];
     w3 = lines[randLineNum2];
+	console.log(w1,w2,w3);
 });
+	console.log(w1,w2,w3);
 	$('#w1').text(w1);
 	$('#w2').text(w2);
 	$('#w3').text(w3);
