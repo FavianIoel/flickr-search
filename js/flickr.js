@@ -13,13 +13,10 @@ $.get('https://raw.githubusercontent.com/FavianIoel/flickr-search/master/data/wo
     w1 = lines[randLineNum];
     w2 = lines[randLineNum1];
     w3 = lines[randLineNum2];
-	console.log(w1,w2,w3);
-});
-	console.log(w1,w2,w3);
-	$('#w1').text(w1);
-	$('#w2').text(w2);
-	$('#w3').text(w3);
-
+    $('#w1').text(w1);
+    $('#w2').text(w2);
+    $('#w3').text(w3);
+	
 	$('button').click(function(event) {
 		$('button').removeClass('selected');
 		$(this).addClass('selected');
@@ -40,7 +37,7 @@ $.get('https://raw.githubusercontent.com/FavianIoel/flickr-search/master/data/wo
 		}
 		$.getJSON(flickerAPI, flickrOptions, displayPhotos);
 	}); // endclick
-
+});
 
 $('form').submit(function (evt) {
     var $submitButton = $('#submit');
