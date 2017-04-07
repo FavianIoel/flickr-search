@@ -14,9 +14,9 @@ $.get('https://raw.githubusercontent.com/FavianIoel/flickr-search/master/data/wo
     w2 = lines[randLineNum1];
     w3 = lines[randLineNum2];
 });
-	$('#w1').html(w1);
-	$('#w2').html(w2);
-	$('#w3').html(w3);
+	$('#w1').text(w1);
+	$('#w2').text(w2);
+	$('#w3').text(w3);
 
 	$('button').click(function(event) {
 		$('button').removeClass('selected');
