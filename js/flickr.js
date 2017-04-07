@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 
 
- var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+ var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 	
 //get random words
 var w1 ,w2 ,w3 = '';
