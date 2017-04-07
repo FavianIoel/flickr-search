@@ -6,8 +6,7 @@ jQuery(document).ready(function($) {
 //get random words
 var w1 ,w2 ,w3 = '';
 $.get('https://raw.githubusercontent.com/FavianIoel/flickr-search/master/data/words.txt', function(txt) {
-	console.log(txt);console.log(txt.response);
-    var lines = txt.response.split("\n");
+    var lines = txt.split("\n");
     var randLineNum = Math.floor(Math.random() * lines.length);
     var randLineNum1 = Math.floor(Math.random() * lines.length);
     var randLineNum2 = Math.floor(Math.random() * lines.length);
