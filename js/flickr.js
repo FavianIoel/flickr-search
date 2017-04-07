@@ -1,5 +1,6 @@
 jQuery(document).ready(function($) {
 
+
  var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 	
 //get random words
@@ -16,6 +17,7 @@ $.get('https://raw.githubusercontent.com/FavianIoel/flickr-search/master/data/wo
 	$('#w1').html(w1);
 	$('#w2').html(w2);
 	$('#w3').html(w3);
+
 	$('button').click(function(event) {
 		$('button').removeClass('selected');
 		$(this).addClass('selected');
